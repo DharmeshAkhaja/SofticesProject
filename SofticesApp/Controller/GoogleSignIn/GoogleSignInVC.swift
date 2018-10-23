@@ -83,4 +83,13 @@ class GoogleSignInVC: UIViewController,GIDSignInUIDelegate,GIDSignInDelegate {
     func isKeyPresentInUserDefaults(key: String) -> Bool {
         return UserDefaults.standard.object(forKey: key) != nil
     }
+    
+    @IBAction func btnActionBack(_ sender: Any) {
+        
+         dismiss(animated: true, completion: nil)
+    }
+    
 }
+
+
+

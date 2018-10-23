@@ -26,6 +26,9 @@
 		F0D4613D215CFEDF0037B38E /* GoogleMap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0D4613C215CFEDF0037B38E /* GoogleMap.storyboard */; };
 		F0D4613F215CFEEF0037B38E /* GoogleMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D4613E215CFEEF0037B38E /* GoogleMapVC.swift */; };
 		F0D46143215CFF1A0037B38E /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D46142215CFF1A0037B38E /* APIKeys.swift */; };
+		F0D7C230217F2D2E00769279 /* FindMaxMinValueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7C22F217F2D2E00769279 /* FindMaxMinValueVC.swift */; };
+		F0D7C232217F2D5700769279 /* ConvertValue.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0D7C231217F2D5700769279 /* ConvertValue.storyboard */; };
+		F0D7C234217F330100769279 /* ConvertValueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7C233217F330100769279 /* ConvertValueVC.swift */; };
 		F0DEECBD216CABD50054D515 /* LoginPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0DEECBC216CABD50054D515 /* LoginPage.storyboard */; };
 		F0DEECC0216CAC390054D515 /* LoginPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DEECBF216CAC390054D515 /* LoginPageVC.swift */; };
 /* End PBXBuildFile section */
@@ -54,6 +57,9 @@
 		F0D4613C215CFEDF0037B38E /* GoogleMap.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GoogleMap.storyboard; sourceTree = "<group>"; };
 		F0D4613E215CFEEF0037B38E /* GoogleMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapVC.swift; sourceTree = "<group>"; };
 		F0D46142215CFF1A0037B38E /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		F0D7C22F217F2D2E00769279 /* FindMaxMinValueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMaxMinValueVC.swift; sourceTree = "<group>"; };
+		F0D7C231217F2D5700769279 /* ConvertValue.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConvertValue.storyboard; sourceTree = "<group>"; };
+		F0D7C233217F330100769279 /* ConvertValueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertValueVC.swift; sourceTree = "<group>"; };
 		F0DEECBC216CABD50054D515 /* LoginPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginPage.storyboard; sourceTree = "<group>"; };
 		F0DEECBF216CAC390054D515 /* LoginPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,8 +107,7 @@
 			children = (
 				F04D7A7021679FCC00BCFA3D /* SideMenuVC.swift */,
 			);
-			name = SideMenu;
-			path = "New Group";
+			path = SideMenu;
 			sourceTree = "<group>";
 		};
 		F0AE45D221624709002F0B89 /* API */ = {
@@ -120,6 +125,16 @@
 				F04D7A722167A0B800BCFA3D /* SideMenuCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		F0CC9A3E217DF323009691D6 /* ConvertValue */ = {
+			isa = PBXGroup;
+			children = (
+				F0D7C22F217F2D2E00769279 /* FindMaxMinValueVC.swift */,
+				F0D7C233217F330100769279 /* ConvertValueVC.swift */,
+			);
+			name = ConvertValue;
+			path = API/ConvertValue;
 			sourceTree = "<group>";
 		};
 		F0D4611D215CFDA40037B38E = {
@@ -180,6 +195,7 @@
 				F0DEECBC216CABD50054D515 /* LoginPage.storyboard */,
 				F0D4612D215CFDA40037B38E /* Main.storyboard */,
 				F0D46132215CFDA60037B38E /* LaunchScreen.storyboard */,
+				F0D7C231217F2D5700769279 /* ConvertValue.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -192,6 +208,7 @@
 				F0DEECBE216CABE20054D515 /* LoginPage */,
 				F04D7A6F21679F8B00BCFA3D /* SideMenu */,
 				F0D4613B215CFEBE0037B38E /* GoogleMap */,
+				F0CC9A3E217DF323009691D6 /* ConvertValue */,
 				F0AE45D221624709002F0B89 /* API */,
 			);
 			path = Controller;
@@ -203,8 +220,7 @@
 				F0DEECBF216CAC390054D515 /* LoginPageVC.swift */,
 				F030E6F2216E1FE20076AB43 /* loginDemoVC.swift */,
 			);
-			name = LoginPage;
-			path = "New Group/LoginPage";
+			path = LoginPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +288,7 @@
 				F0D46134215CFDA60037B38E /* LaunchScreen.storyboard in Resources */,
 				F015DA602171F5BF00A88C76 /* credentials.plist in Resources */,
 				F0D46131215CFDA60037B38E /* Assets.xcassets in Resources */,
+				F0D7C232217F2D5700769279 /* ConvertValue.storyboard in Resources */,
 				F0D4613D215CFEDF0037B38E /* GoogleMap.storyboard in Resources */,
 				F0D4612F215CFDA40037B38E /* Main.storyboard in Resources */,
 				F0DEECBD216CABD50054D515 /* LoginPage.storyboard in Resources */,
@@ -376,7 +393,9 @@
 				F015DA5E2171F03300A88C76 /* GoogleSignInVC.swift in Sources */,
 				F015DA62217208BA00A88C76 /* UserDetailsVc.swift in Sources */,
 				F030E6F5216E21880076AB43 /* Commans.swift in Sources */,
+				F0D7C234217F330100769279 /* ConvertValueVC.swift in Sources */,
 				F0D46143215CFF1A0037B38E /* APIKeys.swift in Sources */,
+				F0D7C230217F2D2E00769279 /* FindMaxMinValueVC.swift in Sources */,
 				F0AE45D421624729002F0B89 /* ApiVC.swift in Sources */,
 				F0D4613F215CFEEF0037B38E /* GoogleMapVC.swift in Sources */,
 				F04D7A732167A0B800BCFA3D /* SideMenuCell.swift in Sources */,
