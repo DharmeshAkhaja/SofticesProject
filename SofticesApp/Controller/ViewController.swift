@@ -29,7 +29,6 @@ class ViewController: UIViewController {
         SideMenuManager.default.menuAnimationPresentDuration = 0.5
         SideMenuManager.default.menuAddPanGestureToPresent(toView: self.navigationController!.view)
         SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
-        
     }
     
     @IBAction func btnActionSideMenu(_ sender: Any) {

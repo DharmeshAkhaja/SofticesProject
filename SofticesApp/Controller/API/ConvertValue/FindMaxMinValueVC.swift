@@ -20,6 +20,8 @@ class FindMaxMinValueVC: UIViewController {
     var arrData: [String] = []
     var intDataArr: [Int] = []
     
+    var SelectedBtnTag: Int = 1
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,20 +36,20 @@ class FindMaxMinValueVC: UIViewController {
     }
     
     @IBAction func btnActionMax(_ sender: Any) {
+        
+        SelectedBtnTag = 1
         SortingFunction()
-        lblMaxValue.text = "\((intDataArr.first)!)"
         
     }
     
     @IBAction func btnActionMin(_ sender: Any) {
-        SortingFunction()
-        DispatchQueue.main.async {
-            self.lblMinValue.text = "\((self.intDataArr.last)!)"
-        }
-        
+       
+        SelectedBtnTag = 2
+     SortingFunction()
     }
     
     func SortingFunction() {
+        if !(txtValue.text?.isEmpty)! {
         let strData = txtValue.text
         arrData = strData!.components(separatedBy: ",")
         var tempData: [Int] = []
@@ -57,7 +59,27 @@ class FindMaxMinValueVC: UIViewController {
         }
         
         intDataArr = tempData.sorted(by: {$0 > $1} )
+            if SelectedBtnTag == 1 {
+                lblMaxValue.text = "\((intDataArr.first)!)"
+            }
+            else {
+                self.lblMinValue.text = "\((self.intDataArr.last)!)"
+            }
+    }
+        else {
+            print("please Enter Value")
+            let alert = UIAlertController(title: "Notice", message: "Please Enter Value", preferredStyle: UIAlertControllerStyle.alert)
+            
+            // add the actions (buttons)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            
+            // show the alert
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     
-
+    @IBAction func btnActionBack(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 }

@@ -178,6 +178,12 @@ class ConvertValueVC: UIViewController,UIPickerViewDataSource,UIPickerViewDelega
             }
         }
     }
+    @IBAction func btnActionFindMinMaeValue(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "ConvertValue", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "FindMaxMinValueVC") as! FindMaxMinValueVC
+        present(vc, animated: true, completion: nil )
+        
+    }
     
     @IBAction func btnActionBack(_ sender: Any) {
         
@@ -195,6 +201,8 @@ extension UIViewController {
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
+    
+    
 }
 
 

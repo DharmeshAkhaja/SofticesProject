@@ -124,19 +124,10 @@ class ApiVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         dismiss(animated: true, completion: nil)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+  
+    @IBAction func btnActionRealm(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "API", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "RealmVC") as! RealmVC
+        present(vc,animated: true, completion: nil)
     }
-    */
-
-    //        responseString { response in
-    //                print("Success: \(response.result.isSuccess)")
-    //                print("Response String: \(response.result.value)")
-    //        }
-    
 }

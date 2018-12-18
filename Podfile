@@ -13,6 +13,11 @@ pod 'Alamofire'
 pod 'FacebookCore'
 pod 'FacebookLogin'
 pod 'FacebookShare'
+pod 'RealmSwift'
+pod 'Firebase'
+pod 'Firebase/Core'
+pod 'Firebase/Database'
+pod 'Firebase/Auth'
 
   # Pods for SofticesApp
 

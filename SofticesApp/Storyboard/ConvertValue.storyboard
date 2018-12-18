@@ -54,6 +54,7 @@
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rdu-lL-2JA">
                                 <rect key="frame" x="91" y="95" width="268" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.98431372549019602" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="TwY-le-B0c"/>
                                 </constraints>
@@ -75,10 +76,22 @@
                                     <action selector="btnActionMin:" destination="6Gs-GM-wBm" eventType="touchUpInside" id="hSi-dm-Kg7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z17-wR-89S">
+                                <rect key="frame" x="10" y="20" width="34" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ezg-rb-yta"/>
+                                </constraints>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="btnActionBack:" destination="6Gs-GM-wBm" eventType="touchUpInside" id="lHs-E5-5vg"/>
+                                    <segue destination="am5-NV-gIO" kind="show" id="xPa-Dr-E7v"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.94117647058823528" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="HII-Rh-5wf" firstAttribute="height" secondItem="Ckc-gI-CCO" secondAttribute="height" id="2sI-9I-OtJ"/>
+                            <constraint firstItem="z17-wR-89S" firstAttribute="leading" secondItem="U33-Tm-6ga" secondAttribute="leading" constant="10" id="9T2-uH-tcr"/>
                             <constraint firstItem="U33-Tm-6ga" firstAttribute="trailing" secondItem="Rdu-lL-2JA" secondAttribute="trailing" constant="16" id="A6h-WQ-mcH"/>
                             <constraint firstItem="Rdu-lL-2JA" firstAttribute="top" secondItem="U33-Tm-6ga" secondAttribute="top" constant="75" id="AeA-OM-lVF"/>
                             <constraint firstItem="Rdu-lL-2JA" firstAttribute="leading" secondItem="SNo-Kb-tNa" secondAttribute="trailing" constant="16" id="BuQ-cd-3u2"/>
@@ -89,6 +102,7 @@
                             <constraint firstItem="SNo-Kb-tNa" firstAttribute="leading" secondItem="U33-Tm-6ga" secondAttribute="leading" constant="16" id="OOc-z4-qtc"/>
                             <constraint firstItem="vlN-UC-vxv" firstAttribute="top" secondItem="HII-Rh-5wf" secondAttribute="bottom" constant="70" id="Q4B-5I-j7U"/>
                             <constraint firstItem="HII-Rh-5wf" firstAttribute="top" secondItem="Ckc-gI-CCO" secondAttribute="bottom" constant="27" id="U1j-EA-2OC"/>
+                            <constraint firstItem="z17-wR-89S" firstAttribute="top" secondItem="U33-Tm-6ga" secondAttribute="top" id="WPZ-e4-f2p"/>
                             <constraint firstItem="HII-Rh-5wf" firstAttribute="leading" secondItem="Ckc-gI-CCO" secondAttribute="leading" id="Zmr-34-e2Z"/>
                             <constraint firstItem="2aV-Af-mlE" firstAttribute="top" secondItem="vlN-UC-vxv" secondAttribute="bottom" constant="34" id="fHq-yh-HYY"/>
                             <constraint firstItem="Rdu-lL-2JA" firstAttribute="leading" secondItem="SNo-Kb-tNa" secondAttribute="trailing" constant="16" id="flM-FL-DB1"/>
@@ -111,7 +125,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nlB-IC-iP2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1831" y="67"/>
+            <point key="canvasLocation" x="-1479" y="53"/>
         </scene>
         <!--ConvertValueVC-->
         <scene sceneID="cwa-i1-HZU">
@@ -160,17 +174,19 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6e-DV-3bQ">
-                                <rect key="frame" x="78" y="111" width="36" height="30"/>
+                                <rect key="frame" x="78" y="111" width="60" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="cjE-Kb-D5a"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <state key="normal" title="From"/>
                                 <connections>
                                     <action selector="btnActionFrom:" destination="am5-NV-gIO" eventType="touchUpInside" id="3L8-03-aMk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHv-SV-gd9">
-                                <rect key="frame" x="246" y="111" width="30" height="30"/>
+                                <rect key="frame" x="270" y="105.5" width="30" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <state key="normal" title="To"/>
                                 <connections>
                                     <action selector="btnActionTo:" destination="am5-NV-gIO" eventType="touchUpInside" id="11N-5p-TE3"/>
@@ -214,7 +230,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7p-aj-V9O">
-                                <rect key="frame" x="160" y="318" width="55" height="30"/>
+                                <rect key="frame" x="140.5" y="312" width="94" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <state key="normal" title="Convert"/>
                                 <connections>
                                     <action selector="btnActionConvert:" destination="am5-NV-gIO" eventType="touchUpInside" id="bVu-0U-8z5"/>
@@ -240,13 +257,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHN-3I-sGm">
+                                <rect key="frame" x="78" y="433" width="215" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FAS-Le-HDM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <state key="normal" title="FindMaxMinValue"/>
+                                <connections>
+                                    <action selector="btnActionFindMinMaeValue:" destination="am5-NV-gIO" eventType="touchUpInside" id="D2l-Mv-17n"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.94824272580000002" blue="0.77652339020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="OXz-bc-dmh" firstAttribute="top" secondItem="M7N-Xs-PNg" secondAttribute="top" constant="153" id="05M-AB-4M7"/>
                             <constraint firstItem="bHv-SV-gd9" firstAttribute="leading" secondItem="Z6e-DV-3bQ" secondAttribute="trailing" constant="132" id="88Q-9w-Yu7"/>
+                            <constraint firstItem="M7N-Xs-PNg" firstAttribute="trailing" secondItem="YHN-3I-sGm" secondAttribute="trailing" constant="82" id="8mb-CV-Kq9"/>
                             <constraint firstItem="ThP-f9-fIr" firstAttribute="leading" secondItem="M7N-Xs-PNg" secondAttribute="leading" id="D0B-Sn-4tq"/>
                             <constraint firstItem="Z6e-DV-3bQ" firstAttribute="baseline" secondItem="bHv-SV-gd9" secondAttribute="baseline" id="G2s-gR-kvs"/>
+                            <constraint firstItem="M7N-Xs-PNg" firstAttribute="bottom" secondItem="YHN-3I-sGm" secondAttribute="bottom" constant="204" id="LP9-I8-YhA"/>
                             <constraint firstItem="UKj-2p-f5Q" firstAttribute="top" secondItem="M7N-Xs-PNg" secondAttribute="top" constant="162" id="Mp6-En-4w9"/>
                             <constraint firstItem="UKj-2p-f5Q" firstAttribute="leading" secondItem="WHb-MW-ALh" secondAttribute="leading" id="Nct-2h-dsr"/>
                             <constraint firstItem="M7N-Xs-PNg" firstAttribute="trailing" secondItem="LMR-a1-7Bm" secondAttribute="trailing" constant="25" id="NqQ-Ke-N57"/>
@@ -266,6 +296,7 @@
                             <constraint firstItem="KjR-GH-QfI" firstAttribute="leading" secondItem="OXz-bc-dmh" secondAttribute="trailing" constant="57" id="nXE-sg-2IW"/>
                             <constraint firstItem="Z6e-DV-3bQ" firstAttribute="top" secondItem="M7N-Xs-PNg" secondAttribute="top" constant="91" id="o1W-xO-zBN"/>
                             <constraint firstItem="WHb-MW-ALh" firstAttribute="top" secondItem="UKj-2p-f5Q" secondAttribute="bottom" constant="32" id="p53-c4-08Q"/>
+                            <constraint firstItem="YHN-3I-sGm" firstAttribute="leading" secondItem="M7N-Xs-PNg" secondAttribute="leading" constant="78" id="u8F-g4-QZc"/>
                             <constraint firstItem="ThP-f9-fIr" firstAttribute="bottom" secondItem="M7N-Xs-PNg" secondAttribute="bottom" constant="220" id="vPY-an-Gjt"/>
                             <constraint firstItem="nmT-Gv-V1Z" firstAttribute="leading" secondItem="M7N-Xs-PNg" secondAttribute="leading" constant="5" id="w6N-z6-fzP"/>
                         </constraints>
@@ -288,7 +319,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xdg-dK-1ux" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1066" y="66"/>
+            <point key="canvasLocation" x="-634.39999999999998" y="63.418290854572717"/>
         </scene>
     </scenes>
 </document>

@@ -11,8 +11,8 @@ import SideMenu
 
 class SideMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var arrData = ["Map","API","FaceBook","Share","ShareIMG","GoogleLogin","ConvertValue"]
-    var arrImage = [#imageLiteral(resourceName: "GOOGLE MAP"),#imageLiteral(resourceName: "api-prosyscom-tech"),#imageLiteral(resourceName: "Facebook 2"),#imageLiteral(resourceName: "ShareButtonRoundBlue"),#imageLiteral(resourceName: "ShareButtonRoundBlue"),#imageLiteral(resourceName: "google-logo"),#imageLiteral(resourceName: "convert")]
+    var arrData = ["Map","API","FaceBook","Share","ShareIMG","GoogleLogin","ConvertValue","UIElement","UserDefualt"]
+    var arrImage = [#imageLiteral(resourceName: "GOOGLE MAP"),#imageLiteral(resourceName: "api-prosyscom-tech"),#imageLiteral(resourceName: "Facebook 2"),#imageLiteral(resourceName: "ShareButtonRoundBlue"),#imageLiteral(resourceName: "ShareButtonRoundBlue"),#imageLiteral(resourceName: "google-logo"),#imageLiteral(resourceName: "convert"),#imageLiteral(resourceName: "convert"),#imageLiteral(resourceName: "userDefualt")]
     
     @IBOutlet weak var tblSideMenu: UITableView!
     override func viewDidLoad() {
@@ -21,7 +21,8 @@ class SideMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tblSideMenu.dataSource = self
         tblSideMenu.delegate = self
         tblSideMenu.tableFooterView = UIView()
-        tblSideMenu.separatorStyle = .none
+        tblSideMenu.rowHeight = 67
+       tblSideMenu.separatorStyle = .none
     }
     
     override func didReceiveMemoryWarning() {
@@ -37,7 +38,7 @@ class SideMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let cell = tblSideMenu.dequeueReusableCell(withIdentifier: "SideMenuCell") as! SideMenuCell
         cell.lblTitle.text = arrData[indexPath.row]
         cell.imgView.image = arrImage[indexPath.row]
-        cell.selectionStyle = .none
+      cell.selectionStyle = .none
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
@@ -81,8 +82,19 @@ class SideMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             let storyboard = UIStoryboard(name: "ConvertValue", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "ConvertValueVC") as! ConvertValueVC
             self.present(vc, animated: true, completion: nil)
-            
-            
+        case 7:
+            let storyBoard = UIStoryboard(name: "UIElement", bundle: nil)
+            let vc = storyBoard.instantiateViewController(withIdentifier: "UIElementVC") as! UIElementVC
+            self.present(vc, animated: true, completion: nil)
+        case 8:
+            let storyboard = UIStoryboard(name: "UserDefualt", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "MainVC") as! MainVC
+            self.present(vc, animated: true, completion: nil)
+//        case 9:
+//            let storyboard = UIStoryboard(name: "LoginPage", bundle: nil)
+//            let vc = storyboard.instantiateViewController(withIdentifier: "LoginPageVC") as! LoginPageVC
+//            self.present(vc, animated: true, completion: nil)
+//
             
             
         default:

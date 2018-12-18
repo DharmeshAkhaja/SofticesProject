@@ -7,17 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0720A13A6D33C4351A176C07 /* Pods_SofticesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0117B64A24022FFA51278F /* Pods_SofticesApp.framework */; };
+		0720A13A6D33C4351A176C07 /* Pods_SofticesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0117B64A24022FFA51278F /* Pods_SofticesApp.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		F015DA5E2171F03300A88C76 /* GoogleSignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F015DA5D2171F03300A88C76 /* GoogleSignInVC.swift */; };
 		F015DA602171F5BF00A88C76 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = F015DA5F2171F5BE00A88C76 /* credentials.plist */; };
 		F015DA62217208BA00A88C76 /* UserDetailsVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F015DA61217208BA00A88C76 /* UserDetailsVc.swift */; };
 		F030E6F3216E1FE20076AB43 /* loginDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F030E6F2216E1FE20076AB43 /* loginDemoVC.swift */; };
 		F030E6F5216E21880076AB43 /* Commans.swift in Sources */ = {isa = PBXBuildFile; fileRef = F030E6F4216E21880076AB43 /* Commans.swift */; };
+		F044C7DC21B7F24A005D0329 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F044C7DB21B7F249005D0329 /* GoogleService-Info.plist */; };
 		F04D7A7121679FCC00BCFA3D /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D7A7021679FCC00BCFA3D /* SideMenuVC.swift */; };
 		F04D7A732167A0B800BCFA3D /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D7A722167A0B800BCFA3D /* SideMenuCell.swift */; };
 		F0AE45D12162469F002F0B89 /* API.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0AE45D02162469F002F0B89 /* API.storyboard */; };
 		F0AE45D421624729002F0B89 /* ApiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AE45D321624729002F0B89 /* ApiVC.swift */; };
 		F0AE45D721624C48002F0B89 /* ApiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AE45D621624C48002F0B89 /* ApiCell.swift */; };
+		F0B81A762187130500E27029 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B81A752187130500E27029 /* MainVC.swift */; };
+		F0B81A78218718D800E27029 /* UIColor_extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B81A77218718D800E27029 /* UIColor_extension.swift */; };
+		F0CA971E2181CBAA00A05549 /* RealmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CA971D2181CBAA00A05549 /* RealmVC.swift */; };
+		F0CFADC22189DBD700BFC929 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CFADC12189DBD700BFC929 /* LoginVC.swift */; };
 		F0D4612A215CFDA40037B38E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D46129215CFDA40037B38E /* AppDelegate.swift */; };
 		F0D4612C215CFDA40037B38E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D4612B215CFDA40037B38E /* ViewController.swift */; };
 		F0D4612F215CFDA40037B38E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0D4612D215CFDA40037B38E /* Main.storyboard */; };
@@ -29,8 +34,18 @@
 		F0D7C230217F2D2E00769279 /* FindMaxMinValueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7C22F217F2D2E00769279 /* FindMaxMinValueVC.swift */; };
 		F0D7C232217F2D5700769279 /* ConvertValue.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0D7C231217F2D5700769279 /* ConvertValue.storyboard */; };
 		F0D7C234217F330100769279 /* ConvertValueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7C233217F330100769279 /* ConvertValueVC.swift */; };
+		F0D7C254217F5ACC00769279 /* UIElement.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0D7C253217F5ACC00769279 /* UIElement.storyboard */; };
+		F0D7C257217F5B0000769279 /* UIElementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7C256217F5B0000769279 /* UIElementVC.swift */; };
+		F0D7F0672181D65E00B9DAB1 /* RealmModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7F0662181D65E00B9DAB1 /* RealmModule.swift */; };
+		F0D7F0692181D77A00B9DAB1 /* StudentListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7F0682181D77A00B9DAB1 /* StudentListVC.swift */; };
+		F0D7F06B2181D79100B9DAB1 /* StudentDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7F06A2181D79100B9DAB1 /* StudentDetailVC.swift */; };
+		F0D7F0712181D95100B9DAB1 /* StudentListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7F0702181D95100B9DAB1 /* StudentListCell.swift */; };
 		F0DEECBD216CABD50054D515 /* LoginPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0DEECBC216CABD50054D515 /* LoginPage.storyboard */; };
 		F0DEECC0216CAC390054D515 /* LoginPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DEECBF216CAC390054D515 /* LoginPageVC.swift */; };
+		F0F28BFE2184797B009EF6A4 /* DatePickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F28BFD2184797B009EF6A4 /* DatePickerVC.swift */; };
+		F0F28C0021847998009EF6A4 /* UserDefualtVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F28BFF21847998009EF6A4 /* UserDefualtVC.swift */; };
+		F0F28C02218479B5009EF6A4 /* UserDefualt.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0F28C01218479B5009EF6A4 /* UserDefualt.storyboard */; };
+		F0F28C0421849EA0009EF6A4 /* UserDefualtKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F28C0321849EA0009EF6A4 /* UserDefualtKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,11 +57,16 @@
 		F015DA61217208BA00A88C76 /* UserDetailsVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsVc.swift; sourceTree = "<group>"; };
 		F030E6F2216E1FE20076AB43 /* loginDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginDemoVC.swift; sourceTree = "<group>"; };
 		F030E6F4216E21880076AB43 /* Commans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commans.swift; sourceTree = "<group>"; };
+		F044C7DB21B7F249005D0329 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F04D7A7021679FCC00BCFA3D /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
 		F04D7A722167A0B800BCFA3D /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
 		F0AE45D02162469F002F0B89 /* API.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = API.storyboard; sourceTree = "<group>"; };
 		F0AE45D321624729002F0B89 /* ApiVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiVC.swift; sourceTree = "<group>"; };
 		F0AE45D621624C48002F0B89 /* ApiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCell.swift; sourceTree = "<group>"; };
+		F0B81A752187130500E27029 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		F0B81A77218718D800E27029 /* UIColor_extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor_extension.swift; sourceTree = "<group>"; };
+		F0CA971D2181CBAA00A05549 /* RealmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmVC.swift; sourceTree = "<group>"; };
+		F0CFADC12189DBD700BFC929 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		F0D46126215CFDA40037B38E /* SofticesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SofticesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D46129215CFDA40037B38E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0D4612B215CFDA40037B38E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,8 +80,18 @@
 		F0D7C22F217F2D2E00769279 /* FindMaxMinValueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMaxMinValueVC.swift; sourceTree = "<group>"; };
 		F0D7C231217F2D5700769279 /* ConvertValue.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConvertValue.storyboard; sourceTree = "<group>"; };
 		F0D7C233217F330100769279 /* ConvertValueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertValueVC.swift; sourceTree = "<group>"; };
+		F0D7C253217F5ACC00769279 /* UIElement.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIElement.storyboard; sourceTree = "<group>"; };
+		F0D7C256217F5B0000769279 /* UIElementVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIElementVC.swift; sourceTree = "<group>"; };
+		F0D7F0662181D65E00B9DAB1 /* RealmModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModule.swift; sourceTree = "<group>"; };
+		F0D7F0682181D77A00B9DAB1 /* StudentListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListVC.swift; sourceTree = "<group>"; };
+		F0D7F06A2181D79100B9DAB1 /* StudentDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDetailVC.swift; sourceTree = "<group>"; };
+		F0D7F0702181D95100B9DAB1 /* StudentListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListCell.swift; sourceTree = "<group>"; };
 		F0DEECBC216CABD50054D515 /* LoginPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginPage.storyboard; sourceTree = "<group>"; };
 		F0DEECBF216CAC390054D515 /* LoginPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageVC.swift; sourceTree = "<group>"; };
+		F0F28BFD2184797B009EF6A4 /* DatePickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerVC.swift; sourceTree = "<group>"; };
+		F0F28BFF21847998009EF6A4 /* UserDefualtVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefualtVC.swift; sourceTree = "<group>"; };
+		F0F28C01218479B5009EF6A4 /* UserDefualt.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserDefualt.storyboard; sourceTree = "<group>"; };
+		F0F28C0321849EA0009EF6A4 /* UserDefualtKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefualtKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +144,9 @@
 			isa = PBXGroup;
 			children = (
 				F0AE45D321624729002F0B89 /* ApiVC.swift */,
+				F0CA971D2181CBAA00A05549 /* RealmVC.swift */,
+				F0D7F0682181D77A00B9DAB1 /* StudentListVC.swift */,
+				F0D7F06A2181D79100B9DAB1 /* StudentDetailVC.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -122,9 +155,26 @@
 			isa = PBXGroup;
 			children = (
 				F0AE45D621624C48002F0B89 /* ApiCell.swift */,
+				F0D7F0702181D95100B9DAB1 /* StudentListCell.swift */,
 				F04D7A722167A0B800BCFA3D /* SideMenuCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		F0B81A79218718FC00E27029 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F0B81A77218718D800E27029 /* UIColor_extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F0CA971F2181D60500A05549 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				F0D7F0662181D65E00B9DAB1 /* RealmModule.swift */,
+			);
+			path = Module;
 			sourceTree = "<group>";
 		};
 		F0CC9A3E217DF323009691D6 /* ConvertValue */ = {
@@ -140,6 +190,7 @@
 		F0D4611D215CFDA40037B38E = {
 			isa = PBXGroup;
 			children = (
+				F0CA971F2181D60500A05549 /* Module */,
 				F0D46128215CFDA40037B38E /* SofticesApp */,
 				F0D46127215CFDA40037B38E /* Products */,
 				12AC30036344DC5078F47456 /* Pods */,
@@ -160,12 +211,14 @@
 			children = (
 				F030E6F4216E21880076AB43 /* Commans.swift */,
 				F0D46129215CFDA40037B38E /* AppDelegate.swift */,
+				F0B81A79218718FC00E27029 /* Extension */,
 				F0D46141215CFF030037B38E /* Constant */,
 				F0D46144215CFF2F0037B38E /* Storyboard */,
 				F0D46145215CFF440037B38E /* Controller */,
 				F0AE45D521624C2A002F0B89 /* Cell */,
 				F0D46130215CFDA60037B38E /* Assets.xcassets */,
 				F0D46135215CFDA60037B38E /* Info.plist */,
+				F044C7DB21B7F249005D0329 /* GoogleService-Info.plist */,
 				F015DA5F2171F5BE00A88C76 /* credentials.plist */,
 			);
 			path = SofticesApp;
@@ -196,6 +249,8 @@
 				F0D4612D215CFDA40037B38E /* Main.storyboard */,
 				F0D46132215CFDA60037B38E /* LaunchScreen.storyboard */,
 				F0D7C231217F2D5700769279 /* ConvertValue.storyboard */,
+				F0D7C253217F5ACC00769279 /* UIElement.storyboard */,
+				F0F28C01218479B5009EF6A4 /* UserDefualt.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -204,6 +259,8 @@
 			isa = PBXGroup;
 			children = (
 				F0D4612B215CFDA40037B38E /* ViewController.swift */,
+				F0F28BFC2184790A009EF6A4 /* UserDefualt&DatePicker */,
+				F0D7C255217F5AE400769279 /* UIElement */,
 				F015DA5C2171EFFD00A88C76 /* GoogleSignIn */,
 				F0DEECBE216CABE20054D515 /* LoginPage */,
 				F04D7A6F21679F8B00BCFA3D /* SideMenu */,
@@ -214,13 +271,33 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		F0D7C255217F5AE400769279 /* UIElement */ = {
+			isa = PBXGroup;
+			children = (
+				F0D7C256217F5B0000769279 /* UIElementVC.swift */,
+			);
+			path = UIElement;
+			sourceTree = "<group>";
+		};
 		F0DEECBE216CABE20054D515 /* LoginPage */ = {
 			isa = PBXGroup;
 			children = (
 				F0DEECBF216CAC390054D515 /* LoginPageVC.swift */,
 				F030E6F2216E1FE20076AB43 /* loginDemoVC.swift */,
+				F0CFADC12189DBD700BFC929 /* LoginVC.swift */,
 			);
 			path = LoginPage;
+			sourceTree = "<group>";
+		};
+		F0F28BFC2184790A009EF6A4 /* UserDefualt&DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				F0F28BFD2184797B009EF6A4 /* DatePickerVC.swift */,
+				F0F28BFF21847998009EF6A4 /* UserDefualtVC.swift */,
+				F0F28C0321849EA0009EF6A4 /* UserDefualtKey.swift */,
+				F0B81A752187130500E27029 /* MainVC.swift */,
+			);
+			path = "UserDefualt&DatePicker";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,10 +363,13 @@
 			files = (
 				F0AE45D12162469F002F0B89 /* API.storyboard in Resources */,
 				F0D46134215CFDA60037B38E /* LaunchScreen.storyboard in Resources */,
+				F0D7C254217F5ACC00769279 /* UIElement.storyboard in Resources */,
 				F015DA602171F5BF00A88C76 /* credentials.plist in Resources */,
 				F0D46131215CFDA60037B38E /* Assets.xcassets in Resources */,
+				F0F28C02218479B5009EF6A4 /* UserDefualt.storyboard in Resources */,
 				F0D7C232217F2D5700769279 /* ConvertValue.storyboard in Resources */,
 				F0D4613D215CFEDF0037B38E /* GoogleMap.storyboard in Resources */,
+				F044C7DC21B7F24A005D0329 /* GoogleService-Info.plist in Resources */,
 				F0D4612F215CFDA40037B38E /* Main.storyboard in Resources */,
 				F0DEECBD216CABD50054D515 /* LoginPage.storyboard in Resources */,
 			);
@@ -356,7 +436,12 @@
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -371,7 +456,12 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -385,21 +475,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0CA971E2181CBAA00A05549 /* RealmVC.swift in Sources */,
 				F0AE45D721624C48002F0B89 /* ApiCell.swift in Sources */,
+				F0D7F0712181D95100B9DAB1 /* StudentListCell.swift in Sources */,
 				F030E6F3216E1FE20076AB43 /* loginDemoVC.swift in Sources */,
 				F0D4612C215CFDA40037B38E /* ViewController.swift in Sources */,
 				F04D7A7121679FCC00BCFA3D /* SideMenuVC.swift in Sources */,
+				F0B81A762187130500E27029 /* MainVC.swift in Sources */,
+				F0F28BFE2184797B009EF6A4 /* DatePickerVC.swift in Sources */,
 				F0D4612A215CFDA40037B38E /* AppDelegate.swift in Sources */,
 				F015DA5E2171F03300A88C76 /* GoogleSignInVC.swift in Sources */,
+				F0D7F0672181D65E00B9DAB1 /* RealmModule.swift in Sources */,
 				F015DA62217208BA00A88C76 /* UserDetailsVc.swift in Sources */,
 				F030E6F5216E21880076AB43 /* Commans.swift in Sources */,
 				F0D7C234217F330100769279 /* ConvertValueVC.swift in Sources */,
 				F0D46143215CFF1A0037B38E /* APIKeys.swift in Sources */,
+				F0D7F0692181D77A00B9DAB1 /* StudentListVC.swift in Sources */,
+				F0F28C0021847998009EF6A4 /* UserDefualtVC.swift in Sources */,
 				F0D7C230217F2D2E00769279 /* FindMaxMinValueVC.swift in Sources */,
 				F0AE45D421624729002F0B89 /* ApiVC.swift in Sources */,
+				F0D7F06B2181D79100B9DAB1 /* StudentDetailVC.swift in Sources */,
 				F0D4613F215CFEEF0037B38E /* GoogleMapVC.swift in Sources */,
+				F0F28C0421849EA0009EF6A4 /* UserDefualtKey.swift in Sources */,
+				F0D7C257217F5B0000769279 /* UIElementVC.swift in Sources */,
+				F0CFADC22189DBD700BFC929 /* LoginVC.swift in Sources */,
 				F04D7A732167A0B800BCFA3D /* SideMenuCell.swift in Sources */,
 				F0DEECC0216CAC390054D515 /* LoginPageVC.swift in Sources */,
+				F0B81A78218718D800E27029 /* UIColor_extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
