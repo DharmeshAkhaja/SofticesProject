@@ -182,14 +182,14 @@
                                                 <color key="backgroundColor" red="0.89747263594505522" green="0.95163784898477155" blue="0.74491641180264878" alpha="0.83160316780821908" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PhoneNumber" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7pQ-ip-8Ws">
                                                 <rect key="frame" x="0.0" y="177" width="325" height="34.5"/>
                                                 <color key="backgroundColor" red="0.89747263594505522" green="0.95163784898477155" blue="0.74491641180264878" alpha="0.83160316780821908" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Fk-hF-uiS">
                                                 <rect key="frame" x="0.0" y="221.5" width="325" height="34"/>

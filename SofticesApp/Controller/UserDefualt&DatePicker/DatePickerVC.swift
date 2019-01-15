@@ -17,6 +17,9 @@ class DatePickerVC: UIViewController {
     @IBOutlet weak var btnTime: UIButton!
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var viewBotttom: NSLayoutConstraint!
+    @IBOutlet weak var lblDate: UILabel!
+    @IBOutlet weak var lblTime: UILabel!
+    
     
     let formetter = DateFormatter()
     var senderButton = UIButton()
@@ -84,11 +87,13 @@ class DatePickerVC: UIViewController {
         
         if datePicker.tag == 1 {
             formetter.dateFormat = "dd,MM,yyyy"
-            btnDate.setTitle(formetter.string(from: datePicker.date), for: .normal)
+//            btnDate.setTitle(formetter.string(from: datePicker.date), for: .normal)
+            lblDate.text = formetter.string(from: datePicker.date)
         }
         else{
             formetter.dateFormat = "hh:mm:ss: a"
-            btnTime.setTitle(formetter.string(from: datePicker.date), for: .normal)
+//            btnTime.setTitle(formetter.string(from: datePicker.date), for: .normal)
+            lblTime.text = formetter.string(from: datePicker.date)
             
             
         }

@@ -52,4 +52,12 @@ class UIElementVC: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func btnActionNextPage(_ sender: UIButton) {
+        
+        let storyboard = UIStoryboard(name: "UIElement", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "TableRow") as! TableRow
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    
 }

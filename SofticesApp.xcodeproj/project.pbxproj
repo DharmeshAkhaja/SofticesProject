@@ -16,11 +16,14 @@
 		F044C7DC21B7F24A005D0329 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F044C7DB21B7F249005D0329 /* GoogleService-Info.plist */; };
 		F04D7A7121679FCC00BCFA3D /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D7A7021679FCC00BCFA3D /* SideMenuVC.swift */; };
 		F04D7A732167A0B800BCFA3D /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D7A722167A0B800BCFA3D /* SideMenuCell.swift */; };
+		F0A3F0FD21DA2D5600EC6155 /* NewContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3F0FC21DA2D5600EC6155 /* NewContactVC.swift */; };
 		F0AE45D12162469F002F0B89 /* API.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0AE45D02162469F002F0B89 /* API.storyboard */; };
 		F0AE45D421624729002F0B89 /* ApiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AE45D321624729002F0B89 /* ApiVC.swift */; };
 		F0AE45D721624C48002F0B89 /* ApiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AE45D621624C48002F0B89 /* ApiCell.swift */; };
 		F0B81A762187130500E27029 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B81A752187130500E27029 /* MainVC.swift */; };
 		F0B81A78218718D800E27029 /* UIColor_extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B81A77218718D800E27029 /* UIColor_extension.swift */; };
+		F0C5372D21CB96BD00EC8752 /* TableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C5372C21CB96BD00EC8752 /* TableRow.swift */; };
+		F0C5372F21CB98E400EC8752 /* TableVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C5372E21CB98E400EC8752 /* TableVCCell.swift */; };
 		F0CA971E2181CBAA00A05549 /* RealmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CA971D2181CBAA00A05549 /* RealmVC.swift */; };
 		F0CFADC22189DBD700BFC929 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CFADC12189DBD700BFC929 /* LoginVC.swift */; };
 		F0D4612A215CFDA40037B38E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D46129215CFDA40037B38E /* AppDelegate.swift */; };
@@ -42,10 +45,13 @@
 		F0D7F0712181D95100B9DAB1 /* StudentListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7F0702181D95100B9DAB1 /* StudentListCell.swift */; };
 		F0DEECBD216CABD50054D515 /* LoginPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0DEECBC216CABD50054D515 /* LoginPage.storyboard */; };
 		F0DEECC0216CAC390054D515 /* LoginPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DEECBF216CAC390054D515 /* LoginPageVC.swift */; };
+		F0F25DD521CE459100C1B7CD /* AddNewContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F25DD421CE459100C1B7CD /* AddNewContactVC.swift */; };
 		F0F28BFE2184797B009EF6A4 /* DatePickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F28BFD2184797B009EF6A4 /* DatePickerVC.swift */; };
 		F0F28C0021847998009EF6A4 /* UserDefualtVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F28BFF21847998009EF6A4 /* UserDefualtVC.swift */; };
 		F0F28C02218479B5009EF6A4 /* UserDefualt.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0F28C01218479B5009EF6A4 /* UserDefualt.storyboard */; };
 		F0F28C0421849EA0009EF6A4 /* UserDefualtKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F28C0321849EA0009EF6A4 /* UserDefualtKey.swift */; };
+		F0F3416D21CCECF0004201DA /* FatchContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F3416C21CCECF0004201DA /* FatchContact.swift */; };
+		F0F3416F21CCED29004201DA /* FatchTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F3416E21CCED29004201DA /* FatchTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,11 +66,14 @@
 		F044C7DB21B7F249005D0329 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F04D7A7021679FCC00BCFA3D /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
 		F04D7A722167A0B800BCFA3D /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
+		F0A3F0FC21DA2D5600EC6155 /* NewContactVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContactVC.swift; sourceTree = "<group>"; };
 		F0AE45D02162469F002F0B89 /* API.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = API.storyboard; sourceTree = "<group>"; };
 		F0AE45D321624729002F0B89 /* ApiVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiVC.swift; sourceTree = "<group>"; };
 		F0AE45D621624C48002F0B89 /* ApiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCell.swift; sourceTree = "<group>"; };
 		F0B81A752187130500E27029 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		F0B81A77218718D800E27029 /* UIColor_extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor_extension.swift; sourceTree = "<group>"; };
+		F0C5372C21CB96BD00EC8752 /* TableRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRow.swift; sourceTree = "<group>"; };
+		F0C5372E21CB98E400EC8752 /* TableVCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVCCell.swift; sourceTree = "<group>"; };
 		F0CA971D2181CBAA00A05549 /* RealmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmVC.swift; sourceTree = "<group>"; };
 		F0CFADC12189DBD700BFC929 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		F0D46126215CFDA40037B38E /* SofticesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SofticesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,10 +97,13 @@
 		F0D7F0702181D95100B9DAB1 /* StudentListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListCell.swift; sourceTree = "<group>"; };
 		F0DEECBC216CABD50054D515 /* LoginPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginPage.storyboard; sourceTree = "<group>"; };
 		F0DEECBF216CAC390054D515 /* LoginPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageVC.swift; sourceTree = "<group>"; };
+		F0F25DD421CE459100C1B7CD /* AddNewContactVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewContactVC.swift; sourceTree = "<group>"; };
 		F0F28BFD2184797B009EF6A4 /* DatePickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerVC.swift; sourceTree = "<group>"; };
 		F0F28BFF21847998009EF6A4 /* UserDefualtVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefualtVC.swift; sourceTree = "<group>"; };
 		F0F28C01218479B5009EF6A4 /* UserDefualt.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserDefualt.storyboard; sourceTree = "<group>"; };
 		F0F28C0321849EA0009EF6A4 /* UserDefualtKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefualtKey.swift; sourceTree = "<group>"; };
+		F0F3416C21CCECF0004201DA /* FatchContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FatchContact.swift; sourceTree = "<group>"; };
+		F0F3416E21CCED29004201DA /* FatchTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FatchTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +287,12 @@
 			isa = PBXGroup;
 			children = (
 				F0D7C256217F5B0000769279 /* UIElementVC.swift */,
+				F0F3416E21CCED29004201DA /* FatchTableCell.swift */,
+				F0C5372E21CB98E400EC8752 /* TableVCCell.swift */,
+				F0C5372C21CB96BD00EC8752 /* TableRow.swift */,
+				F0F25DD421CE459100C1B7CD /* AddNewContactVC.swift */,
+				F0F3416C21CCECF0004201DA /* FatchContact.swift */,
+				F0A3F0FC21DA2D5600EC6155 /* NewContactVC.swift */,
 			);
 			path = UIElement;
 			sourceTree = "<group>";
@@ -476,15 +494,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0CA971E2181CBAA00A05549 /* RealmVC.swift in Sources */,
+				F0F3416D21CCECF0004201DA /* FatchContact.swift in Sources */,
+				F0C5372F21CB98E400EC8752 /* TableVCCell.swift in Sources */,
 				F0AE45D721624C48002F0B89 /* ApiCell.swift in Sources */,
 				F0D7F0712181D95100B9DAB1 /* StudentListCell.swift in Sources */,
 				F030E6F3216E1FE20076AB43 /* loginDemoVC.swift in Sources */,
 				F0D4612C215CFDA40037B38E /* ViewController.swift in Sources */,
 				F04D7A7121679FCC00BCFA3D /* SideMenuVC.swift in Sources */,
+				F0F25DD521CE459100C1B7CD /* AddNewContactVC.swift in Sources */,
 				F0B81A762187130500E27029 /* MainVC.swift in Sources */,
 				F0F28BFE2184797B009EF6A4 /* DatePickerVC.swift in Sources */,
 				F0D4612A215CFDA40037B38E /* AppDelegate.swift in Sources */,
+				F0C5372D21CB96BD00EC8752 /* TableRow.swift in Sources */,
 				F015DA5E2171F03300A88C76 /* GoogleSignInVC.swift in Sources */,
+				F0F3416F21CCED29004201DA /* FatchTableCell.swift in Sources */,
 				F0D7F0672181D65E00B9DAB1 /* RealmModule.swift in Sources */,
 				F015DA62217208BA00A88C76 /* UserDetailsVc.swift in Sources */,
 				F030E6F5216E21880076AB43 /* Commans.swift in Sources */,
@@ -501,6 +524,7 @@
 				F0CFADC22189DBD700BFC929 /* LoginVC.swift in Sources */,
 				F04D7A732167A0B800BCFA3D /* SideMenuCell.swift in Sources */,
 				F0DEECC0216CAC390054D515 /* LoginPageVC.swift in Sources */,
+				F0A3F0FD21DA2D5600EC6155 /* NewContactVC.swift in Sources */,
 				F0B81A78218718D800E27029 /* UIColor_extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

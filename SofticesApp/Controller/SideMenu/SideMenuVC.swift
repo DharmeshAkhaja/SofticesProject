@@ -69,7 +69,7 @@ class SideMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             self.present(activityViewController, animated: true, completion: nil)
         case 4:
             let image = UIImage(named: "logout")
-            let activityViewController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+            let activityViewController = UIActivityViewController(activityItems: [image!], applicationActivities: nil)
             activityViewController.popoverPresentationController?.sourceView = self.view
             activityViewController.excludedActivityTypes = [ UIActivityType.airDrop, UIActivityType.postToFacebook ]
             

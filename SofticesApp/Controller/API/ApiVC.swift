@@ -98,7 +98,7 @@ class ApiVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let headers = ["Content-Type": "application/json"]
         print(param)
         
-        Alamofire.request(url,method: .post, parameters: param, encoding: JSONEncoding.default, headers: nil).responseJSON { (response) in
+        Alamofire.request(url,method: .put, parameters: param, encoding: JSONEncoding.default, headers: nil).responseJSON { (response) in
 
             switch(response.result) {
             case .success(_):
