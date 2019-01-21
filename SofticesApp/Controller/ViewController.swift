@@ -21,8 +21,9 @@ class ViewController: UIViewController {
     }
    
     func setupSidemenu(){
-        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyBoard.instantiateViewController(withIdentifier: "UISideMenuNavigationController") as! UISideMenuNavigationController
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "UISideMenuNavigationController") as! UISideMenuNavigationController
+        
         SideMenuManager.default.menuLeftNavigationController = vc
         SideMenuManager.default.menuPresentMode = .menuSlideIn
         SideMenuManager.default.menuWidth = self.view.frame.width * 0.75
@@ -33,7 +34,7 @@ class ViewController: UIViewController {
     
     @IBAction func btnActionSideMenu(_ sender: Any) {
         present(SideMenuManager.default.menuLeftNavigationController!, animated: true, completion: nil)
-        
+
     }
 
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginPageVC: UIViewController {
     
@@ -25,11 +26,26 @@ class LoginPageVC: UIViewController {
     }
     
     @IBAction func btnActionLogin(_ sender: Any) {
-        if isValidate() {
-            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyBoard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-            self.navigationController?.pushViewController(vc, animated: true)
-            present(vc, animated: true, completion: nil)
+     
+        
+//        if isValidate() {
+//            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+//            let vc = storyBoard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+//            self.navigationController?.pushViewController(vc, animated: true)
+////            present(vc, animated: true, completion: nil)
+//        }
+        if let email = txtUserID.text , let pass = txtPassword.text {
+            
+            Auth.auth().signIn(withEmail: email, password: pass) { (user, error) in
+                if let u = user {
+                    let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+                    let vc = storyBoard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+                    self.navigationController?.pushViewController(vc, animated: true)
+                    
+                }else{
+                    //Error: check error and show message
+                }
+            }
         }
         else{
 //            print("enter Value")
@@ -47,7 +63,7 @@ class LoginPageVC: UIViewController {
     }
     
     
-    func isValidate() -> Bool {
+   /* func isValidate() -> Bool {
         
         if txtUserID.text != "" {
             let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
@@ -69,7 +85,7 @@ class LoginPageVC: UIViewController {
     
     func isValidEmail(testStr:String) -> Bool {
         return true
-    }
+    } */
     
     @IBAction func Register(_ sender: Any) {
         let storyboard = UIStoryboard(name: "LoginPage", bundle: nil)

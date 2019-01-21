@@ -47,9 +47,9 @@ class loginDemoVC: UIViewController {
             guard let uid = Auth.auth().currentUser?.uid else {
                 return
             }
-            let ref = Database.database().reference(fromURL: "https://fir-demo-d685e.firebaseio.com/")
+            let ref = Database.database().reference(fromURL: "https://dakhaja-8aa0b.firebaseio.com")
             let userRef = ref.child("User").child(uid)
-            let value = ["FirstName": self.txtFirstName.text!,"lastName": self.txtLastName.text! ,"email": self.txtEmailID.text!, "PhoneNo": self.txtPhoneNo.text!, "Age": self.txtAge.text!] as! [String: Any]
+            let value = ["FirstName": self.txtLastName.text!,"LastName": self.txtLastName.text! ,"email": self.txtEmailID.text!,"PhoneNo": self.txtPhoneNo.text!,"Age": self.txtAge.text!] as [String: Any]
             userRef.updateChildValues(value, withCompletionBlock: { (error, ref) in
                 if error != nil {
                     print(error)
@@ -59,9 +59,10 @@ class loginDemoVC: UIViewController {
                 let storyboard = UIStoryboard (name: "LoginPage", bundle: nil)
                 let vc = storyboard.instantiateViewController(withIdentifier: "LoginPageVC") as! LoginPageVC
                 self.present(vc, animated: true, completion: nil)
-                
             })
         }
+        
+       
     }
     
     @IBAction func btnActionBAck(_ sender: Any) {

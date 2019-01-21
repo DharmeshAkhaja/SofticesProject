@@ -11,8 +11,8 @@ import SideMenu
 
 class SideMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var arrData = ["Map","API","FaceBook","Share","ShareIMG","GoogleLogin","ConvertValue","UIElement","UserDefualt"]
-    var arrImage = [#imageLiteral(resourceName: "GOOGLE MAP"),#imageLiteral(resourceName: "api-prosyscom-tech"),#imageLiteral(resourceName: "Facebook 2"),#imageLiteral(resourceName: "ShareButtonRoundBlue"),#imageLiteral(resourceName: "ShareButtonRoundBlue"),#imageLiteral(resourceName: "google-logo"),#imageLiteral(resourceName: "convert"),#imageLiteral(resourceName: "convert"),#imageLiteral(resourceName: "userDefualt")]
+    var arrData = ["Map","API","FaceBook","Share","ShareIMG","GoogleLogin","ConvertValue","UIElement","UserDefualt","LoginPage"]
+    var arrImage = [#imageLiteral(resourceName: "GOOGLE MAP"),#imageLiteral(resourceName: "api-prosyscom-tech"),#imageLiteral(resourceName: "Facebook 2"),#imageLiteral(resourceName: "ShareButtonRoundBlue"),#imageLiteral(resourceName: "ShareButtonRoundBlue"),#imageLiteral(resourceName: "google-logo"),#imageLiteral(resourceName: "convert"),#imageLiteral(resourceName: "convert"),#imageLiteral(resourceName: "userDefualt"),#imageLiteral(resourceName: "login")]
     
     @IBOutlet weak var tblSideMenu: UITableView!
     override func viewDidLoad() {
@@ -90,11 +90,11 @@ class SideMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             let storyboard = UIStoryboard(name: "UserDefualt", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "MainVC") as! MainVC
             self.present(vc, animated: true, completion: nil)
-//        case 9:
-//            let storyboard = UIStoryboard(name: "LoginPage", bundle: nil)
-//            let vc = storyboard.instantiateViewController(withIdentifier: "LoginPageVC") as! LoginPageVC
-//            self.present(vc, animated: true, completion: nil)
-//
+        case 9:
+            let storyboard = UIStoryboard(name: "LoginPage", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "LoginPageVC") as! LoginPageVC
+            self.present(vc, animated: true, completion: nil)
+
             
             
         default:
